@@ -32,13 +32,13 @@ if (compilerJarStats && compilerJarStats.isFile()) {
 }
 
 if (shouldDownloadCompiler) {
-   var compilerBuild = spawn('curl', ['-s', '-S', '-L', '-o', './compiler.jar', url], {
-    stdio: 'inherit'
-   });
+  //  var compilerBuild = spawn('curl', ['-s', '-S', '-L', '-o', './compiler.jar', url], {
+  //   stdio: 'inherit'
+  //  });
 
-   if (compilerBuild.status !== 0) {
-    throw new Error('Downloading compiler jar from Maven Central failed');
-   }
+  //  if (compilerBuild.status !== 0) {
+  //   throw new Error('Downloading compiler jar from Maven Central failed');
+  //  }
 }
 
 ncp('./compiler/contrib', './contrib', function(err) {
