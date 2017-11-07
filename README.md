@@ -26,7 +26,11 @@ You may also post in the
 *Please don't cross post to both Stackoverflow and Closure Compiler Discuss.*
 
 ## Usage
-The compiler package now includes build tool plugins for [Grunt](http://gruntjs.com/) and
+The simplest way to invoke the compiler (e.g. if you're just trying it out) is with [`npx`](https://www.npmjs.com/package/npx):
+
+    npx google-closure-compiler --js=my_program.js --js_output_file=out.js
+
+The compiler package also includes build tool plugins for [Grunt](http://gruntjs.com/) and
 [Gulp](http://gulpjs.com/).
 
 ### Installation
@@ -287,7 +291,7 @@ var closureCompiler = require('google-closure-compiler').gulp({
 });
 ```
 
-## Plugin Authors and Native Node Usage
+## Native Node Usage (for Plugin Authors)
 A low-level node class is included to facilitate spawning the compiler jar as a process from Node.
 In addition, it exposes a static property with the path to the compiler jar file.
 

@@ -1,6 +1,6 @@
 {
   "name": "google-closure-compiler",
-  "version": "20170521.0.0",
+  "version": "20171023.0.1",
   "description": "Check, compile, optimize and compress Javascript with Closure-Compiler",
   "repository": {
     "type": "git",
@@ -15,6 +15,9 @@
     "gulpplugin",
     "gruntplugin"
   ],
+  "bin": {
+    "google-closure-compiler": "cli.js"
+  },
   "main": "index.js",
   "contributors": [
     {
@@ -25,6 +28,7 @@
   "files": [
     "lib/",
     "compiler.jar",
+    "cli.js",
     "index.js",
     "package.json",
     "contrib/",
@@ -58,6 +62,6 @@
     "pretest": "./build_compiler.js"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=4"
   }
 }
