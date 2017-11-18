@@ -64,7 +64,8 @@ describe('compiler.jar', function() {
       versionInfo.length.should.be.eql(2);
 
       try {
-        var compilerVersion = new Semver(versionInfo[1] + '.0.0');
+        var numericVersion = versionInfo[1].replace(/[^0-9]/g, '');
+        var compilerVersion = new Semver(numericVersion + '.0.0');
         compilerVersion.major.should.be.equal(packageVer.major);
       } catch (e) {
         assertError.fail();

@@ -1,6 +1,6 @@
 {
   "name": "google-closure-compiler",
-  "version": "20171116.0.0-webpack-beta",
+  "version": "20171118.0.0-webpack-beta",
   "publishConfig": {
     "tag": "webpack-beta"
   },
